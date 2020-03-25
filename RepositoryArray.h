@@ -15,5 +15,6 @@ public:
 	void updateElem(Project, char*, int, int);
 	Project* getAll();
 	int dim();
+
 	~RepositoryArray();
 };

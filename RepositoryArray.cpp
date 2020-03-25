@@ -34,6 +34,7 @@ void RepositoryArray::updateElem(Project s, char* n, int v, int u) {
 Project* RepositoryArray::getAll() {
 	return elem;
 }
+
 int RepositoryArray::dim() {
 	return size;
 }
