@@ -8,6 +8,8 @@ int main()
     appTests();
     repositorySTLTests();
     serviceTests();
+    testeRepoFile();
+
     cout << "Testele sunt ok! :D" << endl<<endl;
 
     UserInterface ui;

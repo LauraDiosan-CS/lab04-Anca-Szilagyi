@@ -1,5 +1,6 @@
 #pragma once
 #include "RepositorySTL.h"
+#include "RepoFile.h"
 #include <list>
 #include<iterator>
 
@@ -7,7 +8,7 @@ using namespace std;
 
 class Service{
 private:
-	RepositorySTL depozit;
+	RepoFile depozit;
 public:
 	Service();
 	int addElem(Aplicatie);
@@ -17,6 +18,13 @@ public:
 	Aplicatie getItemFromPos(int i);
 	list<Aplicatie> getAll();
 	int dim();
+	int getCapMax();
+
+	int intrare(const char* numarInmatriculare);
 	Aplicatie get(list<Aplicatie> elem, int _i);
+	int capacitate();
+	int areLoc();
+	void setCapacitateMaxima(int);
+
 	~Service();
 };

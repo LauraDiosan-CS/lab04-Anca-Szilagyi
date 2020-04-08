@@ -12,6 +12,9 @@ private:
 	void stergere();
 	void update();
 	void getAllProjects();
+	void intrareMasina(); 
+	void setCapacitateMaxima();
+
 
 public:
 	UserInterface();

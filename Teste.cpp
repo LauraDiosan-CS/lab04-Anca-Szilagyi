@@ -2,6 +2,7 @@
 #include "Aplicatie.h"
 #include "assert.h"
 #include "RepositorySTL.h"
+#include "RepoFile.h"
 #include "Service.h"
 #include <iostream>
 #include <iterator>
@@ -85,4 +86,15 @@ void serviceTests() {
 	assert(service.getItemFromPos(2) == app24);
 	service.updateElem(app24, "AncaSzilagyi", "BC12ASZ", "liber");
 	assert(strcmp(service.getItemFromPos(2).getNume(), "AncaSzilagyi") == 0);
+	service.setCapacitateMaxima(10);
+	assert(service.getCapMax() == 10);
+	assert(service.intrare("BC12ASZ") == 1);
+	assert(strcmp(service.getItemFromPos(2).getStatus(), "ocupat") == 0);
+}
+
+void testeRepoFile() {
+	RepoFile repo;
+	repo.loadFromFile("Teste.txt");
+	assert(strcmp(repo.getAll().front().getNume(), "AncaSzilagyi") == 0);
+	assert(repo.dim() == 3);
 }

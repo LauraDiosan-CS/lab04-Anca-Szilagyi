@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="Aplicatie.cpp" />
     <ClCompile Include="Laborator6.cpp" />
+    <ClCompile Include="RepoFile.cpp" />
     <ClCompile Include="RepositorySTL.cpp" />
     <ClCompile Include="Service.cpp" />
     <ClCompile Include="Teste.cpp" />
@@ -156,10 +157,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aplicatie.h" />
+    <ClInclude Include="RepoFile.h" />
     <ClInclude Include="RepositorySTL.h" />
     <ClInclude Include="Service.h" />
     <ClInclude Include="Teste.h" />
     <ClInclude Include="UserInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Teste.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

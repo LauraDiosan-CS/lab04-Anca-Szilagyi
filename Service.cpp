@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include<iostream>
 #include <list>
-
 using namespace std;
 
 Service::Service()
@@ -66,6 +65,39 @@ Aplicatie Service::getItemFromPos(int i) {
 	return depozit.getItemFromPos(i);
 }
 
+int Service::capacitate() {
+	int cap = 0;
+	if (depozit.dim() == 0) return 0;
+	for (int i = 0; i < depozit.dim(); i++) 
+		if (strcmp(getItemFromPos(i).getStatus(), "ocupat") == 0) cap++;
+	return cap;
+}
+
+int Service::areLoc() {
+	int masiniInParcare = capacitate();
+	if (masiniInParcare < depozit.getCapacitateMaxima()) return 1;
+	return 0;
+}
+
+void Service::setCapacitateMaxima(int number) {
+	depozit.setCapacitateMaxima(number);
+}
+int Service::getCapMax() {
+	return depozit.getCapacitateMaxima();
+}
+
+int Service::intrare(const char* numarInmatriculare) {
+	int ok = 0;
+	for (int i = 0; i < depozit.dim(); i++) 
+		if (strcmp(getItemFromPos(i).getNrInmatriculare(), numarInmatriculare) == 0) {
+			if (strcmp(getItemFromPos(i).getStatus(), "liber") == 0) {
+				updateElem(getItemFromPos(i), getItemFromPos(i).getNume(), numarInmatriculare, "ocupat");
+				ok = 1;
+			}
+			else ok = 0;
+		}	
+	return ok;
+}
 
 Service::~Service()
 {}
