@@ -1,21 +1,21 @@
-/*#pragma once
-#include "Project.h"
-#include "RepositoryArray.h"
-#include "Operations.h"
+#pragma once
+#include "Aplicatie.h"
+#include "RepositorySTL.h"
+#include "Service.h"
 
 class UserInterface {
 private:
 	Service service;
+
+	void menu();
+	void adaugare();
+	void stergere();
+	void update();
+	void getAllProjects();
+
 public:
 	UserInterface();
-	void menu(int&);
-	void createProject(const char*&, int&, int& );
-	void adaugare(Project);
-	Project gasesteDupaPozitie(int);
-	void stergere(Project);
-	void update(Project, char*, int, int);
-	Project* toate();
-	int dimensiune();
+	void console();
 
 	~UserInterface();
-};*/
+};
