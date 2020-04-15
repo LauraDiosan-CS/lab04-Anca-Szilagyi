@@ -1,87 +1,52 @@
 #include "Telefon.h"
-Telefon::Telefon() {
-	this->numeProducator = NULL;
-	this->numeModel = NULL;
-	this->listaOperatoriGSMCompatibili = NULL;
-	this->unitatiProduse = 0;
-}
-Telefon::~Telefon() {
-
-}
-
-
-
-/*#include "Telefon.h"
-#include <iomanip>
-#include <algorithm>
-
+#include<algorithm>
 using namespace std;
 
-
-
-Telefon::Telefon()
-{
+Telefon::Telefon() :Gadget() {
 }
 
-Telefon::Telefon(const char* numeProducator, const char* model, const char* unitati, char operatori) :Gadget(numeProducator, model, unitati)
-{
-	listaOperatoriGSMCompatibili = operatori;
+Telefon::Telefon(const char* p, const char* m, int u, const char* r) : Gadget(p, m, u) {
+	listaOperatoriGSMCompatibili= r;
 }
 
-Telefon::Telefon(const Telefon& phone) : Gadget(phone)
-{
-	listaOperatoriGSMCompatibili = phone.listaOperatoriGSMCompatibili;
+Telefon::Telefon(Telefon& d) : Gadget(d) {
+	listaOperatoriGSMCompatibili = d.listaOperatoriGSMCompatibili;
 }
 
-
-Telefon::~Telefon()
-{
+Telefon::~Telefon() {
 }
 
-char Telefon::getlistaOperatoriGSMCompatibili()
-{
+const char* Telefon::getListaOperatori() {
 	return listaOperatoriGSMCompatibili;
 }
 
-void Telefon::setlistaOperatoriGSMCompatibili(char ib)
-{
-	listaOperatoriGSMCompatibili = ib;
+void Telefon::setListaOperatori(const char* r) {
+	listaOperatoriGSMCompatibili = r;
 }
 
-Telefon& Telefon::operator=(const Telefon& phone)
+Telefon& Telefon::operator=(const Telefon& sb)
 {
-	this->Gadget::operator=(phone);
-	this->listaOperatoriGSMCompatibili = phone.listaOperatoriGSMCompatibili;
+	this->Gadget::operator=(sb);
+	this->listaOperatoriGSMCompatibili = sb.listaOperatoriGSMCompatibili;
 	return *this;
 }
 
 bool Telefon::operator==(const Telefon& s)
 {
-	return (Gadget::operator==(s) && (listaOperatoriGSMCompatibili == s.listaOperatoriGSMCompatibili));
-}
-
-istream& operator>>(istream& is, Telefon& phone) {
-	cout << "Dati numele: ";
-	char* numeProducator = new char[10];
-	is >> numeProducator;
-	cout << "Dati unitatiProduse: ";
-	int v;
-	is >> v;
-	cout << "Dati listaOperatoriGSMCompatibili:";
-	char iban;
-	is >> iban;
-	phone.setNumeProducator(numeProducator);
-	phone.setUnitatiProduse(v);
-	phone.setlistaOperatoriGSMCompatibili(iban);
-	delete[] numeProducator;
-	return is;
+	return (Gadget::operator==(s) && (strcmp(listaOperatoriGSMCompatibili, s.listaOperatoriGSMCompatibili)==0));
 }
 
 
-ostream& operator<<(ostream& os, Telefon& phone) {
-	os << "|-----------------------------|" << endl;
-	std::transform(phone.listaOperatoriGSMCompatibili.begin(), phone.listaOperatoriGSMCompatibili.end(), phone.listaOperatoriGSMCompatibili.begin(), ::toupper);
-	os << "|" << std::left << setw(10) << setfill(' ') << phone.numeProducator << "|" << setw(4) << phone.unitatiProduse << "|" << setw(15) << setfill(' ') << phone.listaOperatoriGSMCompatibili << "|" << endl;
-	//os << "| ----------------------------|" << endl;
-	return os;
-}*/
+
+
+
+Telefon* Telefon::clone()
+{
+	Telefon* newT = new Telefon();
+	newT->setNumarProducator(numeProd);
+	newT->setNumeModel(model);
+	newT->setUnitati(unitatiProduse);
+	newT->listaOperatoriGSMCompatibili = listaOperatoriGSMCompatibili;
+	return newT;
+}
+

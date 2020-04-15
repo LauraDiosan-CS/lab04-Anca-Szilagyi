@@ -41,21 +41,21 @@ void RepositoryFile<T>::loadFromFile(const char* fileName)
 	RepositoryTemplate::clearElem();
 	fis = fileName;
 	ifstream f(fileName);
-	char* numeProducator = new char[20];
-	char* numeModel = new char[20];
+	char* numeProd = new char[20];
+	char* model = new char[20];
 	int unitatiProduse = new int[10];
 	while (!f.eof())
 	{
-		f >> numeProducator >> numeModel >> unitatiProduse;
-		if (strcmp(numeProducator, "") != 0)
+		f >> numeProd >> model >> unitatiProduse;
+		if (strcmp(numeProd, "") != 0)
 		{
-			T e(numeProducator, numeModel, unitatiProduse);
+			T e(numeProd, model, unitatiProduse);
 			//elem.push_back(e);
 			RepositoryTemplate::addElem(e);
 		}
 	}
-	delete[] numeProducator;
-	delete[] numeModel;
+	delete[] numeProd;
+	delete[] model;
 	delete[] unitatiProduse;
 	f.close();
 }

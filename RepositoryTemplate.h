@@ -15,9 +15,9 @@ public:
 	virtual int deleteElem(const T&);
 	int findElem(const T&);
 	int getSize();
-	virtual void updateElem(const T& s, const T nou);
-	list<T> getAll();
-	T getItemFromPos(int);
+	//virtual void updateElem(const* T& s, const T nou);
+	//list<T> getAll();
+	//T getItemFromPos(int);
 	void clearElem();
 	~RepositoryTemplate();
 };
@@ -73,32 +73,7 @@ int RepositoryTemplate<T>::getSize()
 	return 0;
 }
 
-template<class T>
-void RepositoryTemplate<T>::updateElem(const T& vechi, const T nou)
-{
-	replace(elem.begin(), elem.end(), vechi, nou);
 
-}
-
-template<class T>
-list<T> RepositoryTemplate<T>::getAll()
-{
-	return elem;
-	return list<T>();
-}
-
-template<class T>
-T RepositoryTemplate<T>::getItemFromPos(int i) {
-	typename list<T>::iterator it;
-	int k = 0;
-	for (it = elem.begin(); it != elem.end(); it++)
-	{
-		if (k == i)
-			return *it;
-		k++;
-
-	}
-}
 template<class T> void RepositoryTemplate<T>::clearElem() {
 	elem.clear();
 }
