@@ -1,0 +1,66 @@
+﻿  Laborator8.cpp
+  Telefon.cpp
+  Tests.cpp
+  Generating Code...
+Laborator8.obj : error LNK2005: "public: __thiscall Gadget::Gadget(class Gadget const &)" (??0Gadget@@QAE@ABV0@@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: __thiscall Gadget::Gadget(char const *,char const *,int)" (??0Gadget@@QAE@PBD0H@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: __thiscall Gadget::Gadget(void)" (??0Gadget@@QAE@XZ) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual __thiscall Gadget::~Gadget(void)" (??1Gadget@@UAE@XZ) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: class Gadget & __thiscall Gadget::operator=(class Gadget const &)" (??4Gadget@@QAEAAV0@ABV0@@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: bool __thiscall Gadget::operator==(class Gadget const &)" (??8Gadget@@QAE_NABV0@@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeModel(void)" (?getNumeModel@Gadget@@UAEPADXZ) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeProducator(void)" (?getNumeProducator@Gadget@@UAEPADXZ) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual int __thiscall Gadget::getUnitatiProduse(void)" (?getUnitatiProduse@Gadget@@UAEHXZ) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeModel(char const *)" (?setNumeModel@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeProducator(char const *)" (?setNumeProducator@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2005: "public: virtual void __thiscall Gadget::setUnitatiProduse(int)" (?setUnitatiProduse@Gadget@@UAEXH@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: __thiscall Gadget::Gadget(class Gadget const &)" (??0Gadget@@QAE@ABV0@@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: __thiscall Gadget::Gadget(char const *,char const *,int)" (??0Gadget@@QAE@PBD0H@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: __thiscall Gadget::Gadget(void)" (??0Gadget@@QAE@XZ) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual __thiscall Gadget::~Gadget(void)" (??1Gadget@@UAE@XZ) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: class Gadget & __thiscall Gadget::operator=(class Gadget const &)" (??4Gadget@@QAEAAV0@ABV0@@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: bool __thiscall Gadget::operator==(class Gadget const &)" (??8Gadget@@QAE_NABV0@@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeModel(void)" (?getNumeModel@Gadget@@UAEPADXZ) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeProducator(void)" (?getNumeProducator@Gadget@@UAEPADXZ) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual int __thiscall Gadget::getUnitatiProduse(void)" (?getUnitatiProduse@Gadget@@UAEHXZ) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeModel(char const *)" (?setNumeModel@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeProducator(char const *)" (?setNumeProducator@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+RepoFile.obj : error LNK2005: "public: virtual void __thiscall Gadget::setUnitatiProduse(int)" (?setUnitatiProduse@Gadget@@UAEXH@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: __thiscall Gadget::Gadget(class Gadget const &)" (??0Gadget@@QAE@ABV0@@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: __thiscall Gadget::Gadget(char const *,char const *,int)" (??0Gadget@@QAE@PBD0H@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: __thiscall Gadget::Gadget(void)" (??0Gadget@@QAE@XZ) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual __thiscall Gadget::~Gadget(void)" (??1Gadget@@UAE@XZ) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: class Gadget & __thiscall Gadget::operator=(class Gadget const &)" (??4Gadget@@QAEAAV0@ABV0@@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: bool __thiscall Gadget::operator==(class Gadget const &)" (??8Gadget@@QAE_NABV0@@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeModel(void)" (?getNumeModel@Gadget@@UAEPADXZ) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeProducator(void)" (?getNumeProducator@Gadget@@UAEPADXZ) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual int __thiscall Gadget::getUnitatiProduse(void)" (?getUnitatiProduse@Gadget@@UAEHXZ) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeModel(char const *)" (?setNumeModel@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeProducator(char const *)" (?setNumeProducator@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+RepositoryTemplate.obj : error LNK2005: "public: virtual void __thiscall Gadget::setUnitatiProduse(int)" (?setUnitatiProduse@Gadget@@UAEXH@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: __thiscall Gadget::Gadget(class Gadget const &)" (??0Gadget@@QAE@ABV0@@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: __thiscall Gadget::Gadget(char const *,char const *,int)" (??0Gadget@@QAE@PBD0H@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: __thiscall Gadget::Gadget(void)" (??0Gadget@@QAE@XZ) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual __thiscall Gadget::~Gadget(void)" (??1Gadget@@UAE@XZ) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: class Gadget & __thiscall Gadget::operator=(class Gadget const &)" (??4Gadget@@QAEAAV0@ABV0@@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: bool __thiscall Gadget::operator==(class Gadget const &)" (??8Gadget@@QAE_NABV0@@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeModel(void)" (?getNumeModel@Gadget@@UAEPADXZ) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeProducator(void)" (?getNumeProducator@Gadget@@UAEPADXZ) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual int __thiscall Gadget::getUnitatiProduse(void)" (?getUnitatiProduse@Gadget@@UAEHXZ) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeModel(char const *)" (?setNumeModel@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeProducator(char const *)" (?setNumeProducator@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+Telefon.obj : error LNK2005: "public: virtual void __thiscall Gadget::setUnitatiProduse(int)" (?setUnitatiProduse@Gadget@@UAEXH@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: __thiscall Gadget::Gadget(class Gadget const &)" (??0Gadget@@QAE@ABV0@@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: __thiscall Gadget::Gadget(char const *,char const *,int)" (??0Gadget@@QAE@PBD0H@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: __thiscall Gadget::Gadget(void)" (??0Gadget@@QAE@XZ) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual __thiscall Gadget::~Gadget(void)" (??1Gadget@@UAE@XZ) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: class Gadget & __thiscall Gadget::operator=(class Gadget const &)" (??4Gadget@@QAEAAV0@ABV0@@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: bool __thiscall Gadget::operator==(class Gadget const &)" (??8Gadget@@QAE_NABV0@@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeModel(void)" (?getNumeModel@Gadget@@UAEPADXZ) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual char * __thiscall Gadget::getNumeProducator(void)" (?getNumeProducator@Gadget@@UAEPADXZ) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual int __thiscall Gadget::getUnitatiProduse(void)" (?getUnitatiProduse@Gadget@@UAEHXZ) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeModel(char const *)" (?setNumeModel@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual void __thiscall Gadget::setNumeProducator(char const *)" (?setNumeProducator@Gadget@@UAEXPBD@Z) already defined in Drona.obj
+Tests.obj : error LNK2005: "public: virtual void __thiscall Gadget::setUnitatiProduse(int)" (?setUnitatiProduse@Gadget@@UAEXH@Z) already defined in Drona.obj
+Laborator8.obj : error LNK2019: unresolved external symbol "public: void __thiscall Tests::testRepositoryTemplate(void)" (?testRepositoryTemplate@Tests@@QAEXXZ) referenced in function _main
+C:\Users\Anca Szilagyi\source\repos\Laborator8\Debug\Laborator8.exe : fatal error LNK1120: 1 unresolved externals
