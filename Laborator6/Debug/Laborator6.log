@@ -1,0 +1,104 @@
+﻿  Laborator6.cpp
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Laborator6.cpp(19,27): error C2248: 'UserInterface::UserInterface': cannot access private member declared in class 'UserInterface'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.h(10): message : see declaration of 'UserInterface::UserInterface'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.h(6): message : see declaration of 'UserInterface'
+  RepoFile.cpp
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.cpp(32,15): error C2065: 'T': undeclared identifier
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.cpp(32,6): error C2923: 'RepoFile': 'T' is not a valid template type argument for parameter 'T'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.cpp(32,19): error C2955: 'RepoFile': use of class template requires template argument list
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(12): message : see declaration of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.cpp(33,1): error C2509: 'loadFromFile': member function not declared in 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(12): message : see declaration of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.cpp(68,14): error C2995: 'RepoFile<T>::RepoFile(const char *)': function template has already been defined
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(19): message : see declaration of 'RepoFile<T>::RepoFile'
+  Service.cpp
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(90,13): error C2065: 'c': undeclared identifier
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(98,17): error C2065: 'c': undeclared identifier
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(98,30): error C2065: 'c': undeclared identifier
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(98,63): error C2664: 'Aplicatie::Aplicatie(const Aplicatie &)': cannot convert argument 1 from 'const char [7]' to 'const Aplicatie &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(98,63): message : Reason: cannot convert from 'const char [7]' to 'const Aplicatie'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(98,63): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Aplicatie.h(14,5): message : see declaration of 'Aplicatie::Aplicatie'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.cpp(99,18): error C2065: 'c': undeclared identifier
+  Teste.cpp
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(36,11): error C2955: 'RepoFile': use of class template requires template argument list
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(12): message : see declaration of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(36,15): error C2133: 'repo': unknown size
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(36,11): error C2512: 'RepoFile': no appropriate default constructor available
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(12,1): message : see declaration of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(49,2): error C2662: 'Aplicatie RepoFile<T>::get(std::list<Aplicatie,std::allocator<Aplicatie>>,int)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(49,2): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(49,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(22,12): message : see declaration of 'RepoFile<T>::get'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(50,2): error C2662: 'Aplicatie RepoFile<T>::get(std::list<Aplicatie,std::allocator<Aplicatie>>,int)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(50,2): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(50,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(22,12): message : see declaration of 'RepoFile<T>::get'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(51,2): error C2662: 'Aplicatie RepoFile<T>::get(std::list<Aplicatie,std::allocator<Aplicatie>>,int)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(51,2): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(51,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(22,12): message : see declaration of 'RepoFile<T>::get'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(53,2): error C2662: 'Aplicatie RepoFile<T>::get(std::list<Aplicatie,std::allocator<Aplicatie>>,int)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(53,2): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(53,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(22,12): message : see declaration of 'RepoFile<T>::get'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(73,10): error C2512: 'Service': no appropriate default constructor available
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7,7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(76,20): error C2039: 'addElem': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(77,20): error C2039: 'addElem': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(78,20): error C2039: 'addElem': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(79,20): error C2039: 'addElem': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(84,17): error C2039: 'delElem': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(88,20): error C2039: 'updateElem': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(94,29): error C2039: 'setCapacitateMaxima': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(95,2): error C2039: 'getCapMax': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(96,2): error C2120: 'void' illegal with all types
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(101,15): error C2133: 'repo': unknown size
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(101,11): error C2512: 'RepoFile': no appropriate default constructor available
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(12,1): message : see declaration of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(102,31): error C2662: 'void RepoFile<T>::loadFromFile(const char *)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(102,31): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(102,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(20,7): message : see declaration of 'RepoFile<T>::loadFromFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(107,29): error C2662: 'void RepoFile<T>::saveToFile(const char *)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(107,29): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(107,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(21,7): message : see declaration of 'RepoFile<T>::saveToFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(109,14): error C2039: 'delElem': is not a member of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(12): message : see declaration of 'RepoFile'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(110,29): error C2662: 'void RepoFile<T>::saveToFile(const char *)': cannot convert 'this' pointer from 'RepoFile' to 'RepoFile<T> &'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(110,29): message : Reason: cannot convert from 'RepoFile' to 'RepoFile<T>'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Teste.cpp(110,2): message : Conversion requires a second user-defined-conversion operator or constructor
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\RepoFile.h(21,7): message : see declaration of 'RepoFile<T>::saveToFile'
+  UserInterface.cpp
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(5,32): error C2512: 'Service': no appropriate default constructor available
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7,7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(40,12): error C2039: 'areLoc': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(41,41): error C2440: '=': cannot convert from 'void' to 'int'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(41,38): message : Expressions of type void cannot be converted to other types
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(48,35): error C2039: 'saveToFile': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(50,61): error C2039: 'getCapMax': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(50,84): error C2039: 'capacitate': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(57,37): error C2440: '=': cannot convert from 'void' to 'int'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(57,34): message : Expressions of type void cannot be converted to other types
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(63,31): error C2039: 'saveToFile': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(90,27): error C2039: 'saveToFile': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(131,23): error C2039: 'saveToFile': is not a member of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\Service.h(7): message : see declaration of 'Service'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(154,10): error C2065: 'Masina': undeclared identifier
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(154,5): error C2923: 'std::list': 'Masina' is not a valid template type argument for parameter '_Ty'
+C:\Users\Anca Szilagyi\source\repos\Laborator6\Laborator6\UserInterface.cpp(154,16): fatal error C1903: unable to recover from previous error(s); stopping compilation
