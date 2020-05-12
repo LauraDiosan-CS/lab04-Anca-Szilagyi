@@ -1,0 +1,13 @@
+#pragma once
+void addElemGadget();
+void deleteElemGadget();
+void updateElemGadget();
+void getAllGadget();
+void addElemDrona();
+void deleteElemDrona();
+void updateElemDrona();
+void getAllDrona();
+void addElemTelefon();
+void deleteElemTelefon();
+void updateElemTelefon();
+void getAllTelefon();

@@ -1,107 +1,97 @@
 #pragma once
-#include <list>
-#include <iostream>
+#include "Repo.h"
+#include<iostream>
 #include<fstream>
-#include "Gadget.h"
-#include "RepositoryTemplate.h"
+#include<string.h>
+#include<vector>
+#include<sstream>
+#include "Serializable.h"
 using namespace std;
-
-
-template<class T>class RepositoryFile :public RepositoryTemplate<T>
-{
-private:
+// DERIVED CLASS
+template <class T>
+class RepoFile : public Repo<T> {
+protected:
 	const char* fis;
 public:
-	RepositoryFile();
-	RepositoryFile(const char*);
-	int addElem(const T&);
-	int deleteElem(const T&);
-	void updateElem(const T&, const T);
-	void loadFromFile(const char*);
-	void saveToFile();
-	~RepositoryFile();
+	typedef typename std::remove_reference<T>::type V;
+	RepoFile();
+	~RepoFile();
+	RepoFile(const char*);
+	virtual void addElem(T);
+	virtual int delElem(int);
+	virtual int updateElem(int i, T);
+	virtual void loadFromFile(const char* fileName);
+	virtual void saveToFile();
+	void clearFile(const char*);
 };
-
 template<class T>
-RepositoryFile<T>::RepositoryFile() :RepositoryTemplate<T>()
-{
-	fis = "";
-}
-template<class T>
-RepositoryFile<T>::RepositoryFile(const char* fileName)
-{
-	loadFromFile(fileName);
+RepoFile<T>::RepoFile() {
 
 }
-
 template<class T>
-void RepositoryFile<T>::loadFromFile(const char* fileName)
-{
-	//elem.clear();
-	RepositoryTemplate::clearElem();
-	fis = fileName;
-	ifstream f(fileName);
-	char* numeProd = new char[20];
-	char* model = new char[20];
-	int unitatiProduse = new int[10];
-	while (!f.eof())
-	{
-		f >> numeProd >> model >> unitatiProduse;
-		if (strcmp(numeProd, "") != 0)
-		{
-			T e(numeProd, model, unitatiProduse);
-			//elem.push_back(e);
-			RepositoryTemplate::addElem(e);
-		}
-	}
-	delete[] numeProd;
-	delete[] model;
-	delete[] unitatiProduse;
-	f.close();
-}
-
-template<class T>
-void RepositoryFile<T>::saveToFile()
-{
-	ofstream f(fis);
-	typename list<T>::iterator it;
-	list<T>elem = RepositoryTemplate::getAll();
-	for (it = elem.begin(); it != elem.end(); ++it)
-	{
-		f << *it;
-	}
-	f.close();
-}
-
-template<class T>
-RepositoryFile<T>::~RepositoryFile()
-{
+RepoFile<T>::~RepoFile() {
 
 }
+template <class T>
+RepoFile<T>::RepoFile(const char* fis) {
 
-template<class T>
-int RepositoryFile<T>::addElem(const T& e) {
-	int r = RepositoryTemplate::addElem(e);
-	if (r != -1) {
-		saveToFile();
-		return 0;
-	}
-	return -1;
-}
-
-template<class T>
-int RepositoryFile<T>::deleteElem(const T& e) {
-	int r = RepositoryTemplate::deleteElem(e);
-	if (r != 0) {
-		saveToFile();
-		return 0;
-	}
-	else
-		return -1;
+	loadFromFile(fis);
 }
 template<class T>
-void RepositoryFile<T>::updateElem(const T& e, const T n)
-{
-	RepositoryTemplate::updateElem(e, n);
+void RepoFile<T>::addElem(T a) {
+
+	Repo<T>::addElem(a);
 	saveToFile();
+}
+template <class T>
+int RepoFile<T>::delElem(int i) {
+	int bol;
+	bol = Repo<T>::delElem(i);
+	saveToFile();
+	return bol;
+}
+template<class T>
+int RepoFile<T>::updateElem(int i, T a) {
+	int bol;
+	bol = Repo<T>::updateElem(i, a);
+	saveToFile();
+	return bol;
+}
+template<class T>
+void RepoFile<T>::loadFromFile(const char* fileName) {
+
+	Repo<T>::clearMap();
+	fis = fileName;
+	string linie;
+	ifstream f(fileName);
+	while (getline(f, linie)) {
+		if (!linie.empty()) {
+			Repo<T>::addElem(V::fromString(linie, fis));
+		}
+		else break;
+	}
+	f.close();
+}
+template<class T>
+void RepoFile<T>::saveToFile() {
+
+	ofstream f(fis);
+	map<int, T> elem;
+	elem = Repo<T>::getAll();
+	for (auto i = elem.begin(); i != elem.end(); i++) {
+		f << i->second << "\n";
+	}
+	f.close();
+}
+template<class T>
+void RepoFile<T>::clearFile(const char* fileName) {
+
+	std::ifstream File;
+	std::string filepath = fileName;
+	File.open(filepath.c_str(), std::ifstream::out | std::ifstream::trunc);
+	if (!File.is_open() || File.fail()) {
+		File.close();
+		printf("\nError : failed to erase file content !");
+	}
+	File.close();
 }

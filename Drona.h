@@ -1,25 +1,23 @@
 #pragma once
 #include "Gadget.h"
-#include <sstream>
-class Drona :
-	public Gadget
-{
+#include<vector>
+using namespace std;
+class Drona : public Gadget {
 private:
-	int numarRotoare;
+	int rotoare;
 public:
 	Drona();
-	Drona(const char* p, const char* m, int u, int r);
-	Drona(Drona& d);
-	Drona& operator=(const Drona& sb);
-	bool operator==(const Drona& s);
-
+	Drona(const char*, const string, int, int);
+	Drona(const Drona&);
 	~Drona();
+	Drona(string, string);
+	string toStringCSV();
+	string toStringHTML();
+	int getRotoare();
+	void setRotoare(int);
+	Drona& operator=(const Drona&);
+	bool operator==(const Drona&);
+	friend ostream& operator<<(ostream& os, const Drona& c);
 
-	int getNrRotoare();
-	void setNrRotoare(int r);
 
-	void read(istream& input)override;
-	void write(ostream& output)override;
-	const char* toString() override;
-	Drona* clone()override;
 };

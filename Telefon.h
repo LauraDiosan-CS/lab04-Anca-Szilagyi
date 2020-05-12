@@ -1,23 +1,22 @@
 #pragma once
 #include "Gadget.h"
-class Telefon :
-	public Gadget
-{
+#include<vector>
+using namespace std;
+class Telefon : public Gadget {
 private:
-	const char* listaOperatoriGSMCompatibili;
+	vector<string>operatoriGSM;
 public:
 	Telefon();
-	Telefon(const char* p, const char* m, int u, const char* o);
-	Telefon(Telefon& t);
+	Telefon(const char*, const string, int, vector<string>);
+	Telefon(const Telefon&);
 	~Telefon();
-	bool operator==(const Telefon& s);
-	Telefon& operator=(const Telefon& sb);
+	Telefon(string, string);
+	string toStringCSV();
+	string toStringHTML();
+	vector<string> getOperatoriGSM();
+	void setOperatoriGSM(vector<string>);
+	Telefon& operator=(const Telefon&);
+	bool operator==(const Telefon&);
+	friend ostream& operator<<(ostream& os, const Telefon& s);
 
-	const char* getListaOperatori();
-	void setListaOperatori(const char* o);
-
-	void read(istream& input)override;
-	void write(ostream& output)override;
-	const char* toString() override;
-	Telefon* clone()override;
 };
