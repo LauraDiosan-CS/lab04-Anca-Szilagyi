@@ -1,6 +1,7 @@
 #pragma once
 #include<map>
 #include<iostream>
+#include "Avion.h"
 using namespace std;
 template < class T>
 class Repo {
@@ -66,8 +67,6 @@ template<class T>void Repo<T>::clearMap() {
 
 	elem.clear();
 	key = 0;
-
-
 }
 template<class T>T Repo<T>::find(int i)
 {
@@ -76,6 +75,4 @@ template<class T>T Repo<T>::find(int i)
 		if (poz == i) { return itr->second; }
 		else { itr++; poz++; }
 	}
-
-
 }
